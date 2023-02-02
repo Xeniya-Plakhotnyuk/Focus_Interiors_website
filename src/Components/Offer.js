@@ -1,31 +1,26 @@
 import { useState } from "react";
 import { offer } from "./data";
 
-function Offer(){
+function Offer() {
+  const [service, setService] = useState(offer);
+  const [showText, setShowText] = useState(false);
 
-    const[service, setService] = useState(offer);
-    const [showText, setShowText] = useState(false);
+  const showTextClick = (element) => {
+    element.showMore = !element.showMore;
+    setShowText(!showText);
+  };
 
-    const showTextClick = (element) => {
-      element.showMore = !element.showMore;
-      setShowText(!showText);
-    };
+  return (
+    <div className="main">
+      {service.map((element) => {
+        const { id, title, description, picture, showMore } = element;
 
-
-    return(
-        <div className="main">
-{service.map((element) => {
-          const { id, title, description, picture, showMore } =
-            element;
-
-          return (
-            <div key={id}>
-              <div className="card">
-                <div className="into_card">
+        return (
+          <div key={id}>
+            <div className="card">
+              <div className="into_card">
                 <div className="top">
-                  <h2 className ='servise_name'>
-                    {title}
-                  </h2>
+                  <h2 className="servise_name">{title}</h2>
                 </div>
 
                 <div>
@@ -49,15 +44,13 @@ function Offer(){
                     {showMore ? "Show Less" : "Expand"}
                   </button>
                 </div>
-                </div>
-                
               </div>
             </div>
-          );
-        })}
-
-        </div>
-    )
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Offer;
