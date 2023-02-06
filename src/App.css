@@ -77,14 +77,12 @@ body {
 .visit {
   background-color: #413531;
   color: beige;
-  font-size: 40px;
+  font-size: 24px;
   font-family: 'Inter', sans-serif;
   line-height: 3rem;
   font-weight: lighter;
   padding: 10px;
-  text-align: right;
-
-}
+  }
 
 nav {
   background-color: #CD8D68;
@@ -627,7 +625,7 @@ nav {
 
   .client {
     max-width: 70%;
-  }
+      }
 
   .form-submit {
     min-width: 100%;
@@ -636,6 +634,11 @@ nav {
 
   .info-h2 {
     font-size: 16px;
+  }
+
+  .name{
+    font-size: 20px;
+    font-weight: lighter;
   }
 
 
