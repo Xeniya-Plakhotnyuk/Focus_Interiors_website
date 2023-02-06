@@ -185,7 +185,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 
@@ -225,7 +225,6 @@ nav {
 }
 
 
-
 .banner_contact {
   background-color: #CD8D68;
   padding: 10px 5px;
@@ -240,6 +239,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 20px 30px;
 }
+
 
 .vectors {
   position: absolute;
@@ -355,6 +355,7 @@ nav {
   font-weight: 400;
 }
 
+
 .form-submit {
   background-color: #ec8a52;
   padding: 10px 20px;
@@ -365,6 +366,7 @@ nav {
   font-size: 24px;
   border: none;
   font-weight: bolder;
+  margin-top: 25px;
 
 }
 
@@ -390,7 +392,6 @@ nav {
   color: white;
   display: flex;
   justify-content: center;
-
 }
 
 .info-h2 {
@@ -412,7 +413,7 @@ nav {
 .info-icons-container {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 10px;
 
 }
@@ -421,6 +422,10 @@ nav {
   font-size: 3rem;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.info_icons {
+  float: left;
 }
 
 .footer {
@@ -488,6 +493,7 @@ nav {
   background-color: #E5E5E5;
   padding: 10px;
   font-size: 20px;
+  width: 2ch;
 }
 
 .timeTitle {
@@ -616,11 +622,20 @@ nav {
   }
 
   .hello {
-    max-width: 50%;
+    max-width: 70%;
   }
 
   .client {
     max-width: 70%;
+  }
+
+  .form-submit {
+    min-width: 100%;
+    font-size: 16px;
+  }
+
+  .info-h2 {
+    font-size: 16px;
   }
 
 
@@ -690,5 +705,6 @@ nav {
 
   .form-submit {
     grid-area: submit;
+    min-width: 40%;
   }
 }

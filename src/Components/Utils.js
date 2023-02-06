@@ -8,7 +8,7 @@ export function getRemainingTimeUntilMsTimestamp(timestampMs) {
       seconds: "59",
       minutes: "45",
       hours: "03",
-      days: "15",
+      days: "30",
     };
   }
   return {
@@ -35,7 +35,7 @@ function getRemainingHours(nowDayjs, timestampDayjs) {
 }
 
 function getRemainingDays(nowDayjs, timestampDayjs) {
-  const days = timestampDayjs.diff(nowDayjs, "days") % 30;
+  const days = timestampDayjs.diff(nowDayjs, "days") % 60;
   return days.toString();
 }
 
