@@ -6,7 +6,7 @@ Multipage website created with the REACT, using CRA.
 Navigation performed with React Router. 
 Functionality is fulfilled with hooks, they are useState, useEffect, useNavigate.
 
-Components consist Countdown timer, Sweetalert notification, Formspree message form, image slider,  filtered furniture catalog, and AOS animation.
+Components consist Countdown timer, Sweetalert notification, Formspree message form, image slider,  filtered furniture catalog, AOS animation, and have responsive design.
 
 Website deployed with vercel.com
 
