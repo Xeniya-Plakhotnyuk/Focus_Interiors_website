@@ -2,11 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Multipage website created with the REACT, using CRA.
-Navigation performed with React Router. 
-Functionality is fulfilled with hooks, they are useState, useEffect, useNavigate.
+This website is a dynamic and user-friendly furniture store platform built with React, featuring seamless navigation, interactive item filtering, client feedback slides, a message form, a countdown timer, and alert notifications, all enhanced with the power of React hooks for smooth functionality.
 
-Components consist Countdown timer, Sweetalert notification, Formspree message form, image slider,  filtered furniture catalog, AOS animation, and have responsive design.
+Components consist Countdown timer, Sweetalert notification, Formspree message form, image slider,  filtered furniture catalog, AOS animation, and responsive design.
 
 Website deployed with vercel.com
 
